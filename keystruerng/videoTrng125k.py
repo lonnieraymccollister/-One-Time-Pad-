@@ -14,12 +14,12 @@ for i in range(number):
 
     output_file = open(file,"wb")
 
-    file_hash = hashlib.sha3_256() # Create the hash object, can use something other than `.sha256()` if you wish
+    file_hash = hashlib.sha3_512() # Create the hash object, can use something other than `.sha256()` if you wish
     cap = cv2.VideoCapture(0) # use 0 if you only have front facing camera
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 2250)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 2000)
 
-    for x in range(36000):
+    for x in range(18000):
         ret, frame = cap.read() #read one frame
         #print(frame.shape)
         #file_hash.update(frame) # Update the hash
