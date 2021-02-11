@@ -3,7 +3,7 @@ One Time Pad
 Example
 #### Python
 ####cd /d E:\(Your path)\keys
-#### Generates 30 keys(more can easily be generated)
+#### Generates 30 or more keys
 ####python keygen.py
 ####cd /d E:\lonnielaptop\PythonEnvs\otp
 ####enc.py a.txt 0.txt 0a.txt
