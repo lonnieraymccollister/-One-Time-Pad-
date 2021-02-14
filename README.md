@@ -8,8 +8,7 @@ Example
 ####cd /d E:\lonnielaptop\PythonEnvs\otp
 ####enc.py a.txt 0.txt 0a.txt
 ####dec.py 0a.txt 0.txt a.txt
-####One Time pad keys >= message and therefore not breakable
-####spoiler alert an OTP Keys must be random.
+####One Time pad keys >= message and therefore not breakable.   Vernam -- U.S. Patent 1,310,719, issued July 22, 1919.  The term xor was not used in the patent.  In modern terminology, a Vernam cipher is a symmetrical stream cipher in which the plaintext is combined with a random or pseudorandom stream of data (the "keystream") of the same length, to generate the ciphertext, using the Boolean "exclusive or" (XOR) function.  A famous example of this is the US-Moscow hotline. 
 ####spoiler alert an OTP Keys must be securely delivered and ===>not reused.<===
 ####However -
 ####An OTP can be used to force multifactor authentication - see other repositories
