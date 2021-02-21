@@ -14,8 +14,9 @@ Example
 ####An OTP can be used to force multifactor authentication - see other repositories
 ####An OTP is Quantum secure.
 ####An OTP is not experimental and has had a long history of use worldwide.
-####A gui is included -- otp.py -- the key is automatically moved to a used directory.
-####I recommend registed mail with a return reciept using a microsd for secure delivery of keys. -- See NIST Special Publication 800-53 (Rev. 4) Security and Privacy Controls for Federal Information Systems and Organizations -- SC-37 OUT-OF-BAND CHANNELS -- cryptographic key management information.   
+####A gui is included -- otp.py -- the key is automatically moved from the keys directory to a used directory.
+####I recommend registed mail with a return reciept using a micro-sd for secure delivery of keys. -- See NIST Special Publication 800-53 (Rev. 4) Security and Privacy Controls for Federal Information Systems and Organizations -- SC-37 OUT-OF-BAND CHANNELS -- cryptographic key management information.   
+####Keys can be generated(keygen, videoTrng125k.py, usbrng.py) and tested(sp800_22_tofileloop.py) in the directories keyscsprng, keystruerng, and keysusbtruerng_V3.
 
 
 

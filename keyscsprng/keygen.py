@@ -17,5 +17,5 @@ number = 30
 for i in range(number):
     file = str(i) + ".txt"
     newfile = open( file , "wb")
-    newfile.write (os.urandom(24500000))    # generate x 1 byte random content file
+    newfile.write (os.urandom(1300000))    # generate x 1 byte random content file
     newfile.close ()
