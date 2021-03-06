@@ -24,6 +24,7 @@ from __future__ import print_function
 
 import argparse
 import sys
+import shutil, os
 
 f1 = open('sp800_22_TestReport.txt', 'a')  
 
@@ -164,12 +165,17 @@ else:
     f1.write("SUMMARY: " + " " + filename  + "\n")
     print("-------")
     f1.write("-------" + "\n")
+    count = 0
     
     for result in results:
         (summary_name,summary_p, summary_result) = result
         print(summary_name.ljust(40),summary_p.ljust(18),summary_result)
-        f1.write(summary_name.ljust(40) + " "+ summary_p.ljust(18) + " "+ summary_result + "\n")    
-
+        f1.write(summary_name.ljust(40) + " "+ summary_p.ljust(18) + " "+ summary_result + "\n") 
+        if summary_result == "FAIL": 
+            count = count + 1
+            if count == 1 :
+                os.remove(filename)
+                f1.write("File Deleted" + "\n")
 
 f1.close()
 
