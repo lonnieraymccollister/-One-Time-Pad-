@@ -15,12 +15,12 @@ from tkinter import filedialog
 # Function for opening the 
 # file explorer window 
 def browseKeyFiles(): 
-        filenameKey = filedialog.askopenfilename(initialdir = "/" , title = "Select a File", filetypes = (("Text files", "*.txt*"), ("all files", "*.*")))
+        filenameKey = filedialog.askopenfilename(initialdir = os.path.abspath(os.getcwd()) , title = "Select a File", filetypes = (("Text files", "*.txt*"), ("all files", "*.*")))
 	# Change label contents 
         label_key.configure(text=filenameKey)  
 
 def browseEncryptFiles(): 
-        filenameMessage = filedialog.askopenfilename(initialdir = "/" , title = "Select a File", filetypes = (("Text files", "*.txt*"), ("all files", "*.*"))) 	
+        filenameMessage = filedialog.askopenfilename(initialdir = os.path.abspath(os.getcwd()) , title = "Select a File", filetypes = (("Text files", "*.txt*"), ("all files", "*.*"))) 	
 	# Change label contents 
         label_file.configure(text= "" + filenameMessage)  
         filepath = label_file.cget("text")
@@ -64,7 +64,7 @@ def browseEncryptFiles():
         os.remove(source)
 
 def browseDecryptFiles(): 
-        filenameXor = filedialog.askopenfilename(initialdir = "/" , title = "Select a File", filetypes = (("Text files", "*.txt*"), ("all files", "*.*"))) 	
+        filenameXor = filedialog.askopenfilename(initialdir = os.path.abspath(os.getcwd()) , title = "Select a File", filetypes = (("Text files", "*.txt*"), ("all files", "*.*"))) 	
 	# Change label contents 
         label_file.configure(text= "" + filenameXor)  
         filepath = label_file.cget("text")
