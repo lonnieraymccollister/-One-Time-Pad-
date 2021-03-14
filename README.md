@@ -18,7 +18,8 @@ Example
 ####An OTP is not experimental and has had a long history of use worldwide.
 ####A gui is included -- otp.py -- the key is automatically moved from the keys directory to a used directory.  Keys generated in other directories should be moved to the keys directory and any used keys should be deleted at that time.
 ####I recommend registed mail with a return reciept using a micro-sd for secure delivery of keys in order to minimize costs and maximize security. -- See NIST Special Publication 800-53 (Rev. 4) Security and Privacy Controls for Federal Information Systems and Organizations -- SC-37 OUT-OF-BAND CHANNELS -- cryptographic key management information.  Another option is "in person".
-####  
+####  In the key directory use Combine2OtpFiles.py, Combine4OtpFiles.py, Combine8OtpFiles.py, and Combine16OtpFiles.py to increase the size of the Key file.  The keys used will be automatically deleted as reused keys are an attack on the one time pad.  An example of this is ===>> Combine2OtpFiles.py 1 2 <<===.  The program will automatically add the .txt suffix of the key file. 
+####
 
 
 
