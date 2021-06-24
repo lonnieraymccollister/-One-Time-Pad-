@@ -1,4 +1,4 @@
-#python setup.py build_ext --inplace 
+#python setup.py build_ext --inplace --language_level=3
 from setuptools import setup
 from Cython.Build import cythonize
 
@@ -60,13 +60,5 @@ setup(
 
 setup(
     ext_modules = cythonize("sp800_22_serial_test.pyx")
-)
-
-setup(
-    ext_modules = cythonize("usbrng.pyx")
-)
-
-setup(
-    ext_modules = cythonize("usbrng1.pyx")
 )
 
