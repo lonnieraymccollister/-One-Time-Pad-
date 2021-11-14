@@ -7,6 +7,7 @@ import subprocess
 import shutil, os
 import sys
 from tkinter import *
+from sys import argv,exit
 
 # import filedialog module 
 from tkinter import filedialog 
