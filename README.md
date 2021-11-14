@@ -3,7 +3,7 @@ One Time Pad
 Example
 #### Python
 #### cd /d E:\(Your path)\keys 
-#### Generates 30 or more keys
+#### Generates 30 keys
 #### python keygen.py
 #### cd /d E:\lonnielaptop\PythonEnvs\otp
 #### enc.py a.txt 0.txt 0a.txt
@@ -21,6 +21,7 @@ Example
 ####  In the key directory use Combine2OtpFiles.py, Combine4OtpFiles.py, Combine8OtpFiles.py, and Combine16OtpFiles.py to increase the size of the Key file.  The keys used will be automatically deleted as reused keys are an attack on the one time pad.  An example of this is ===>> Combine2OtpFiles.py 1 2 <<===.  The program will automatically add the .txt suffix of the key file. 
 #### BinaryToImage.py converts the key file into an image file.  
 #### pyinstaller --onefile -w otp.py will create a windows program.(included)
+#### keygen.exe in keyscsprng will generate 1k keys.  Go to that directory(command prompt) and type keygen.exe the command prompt.(included)
 
 
 
