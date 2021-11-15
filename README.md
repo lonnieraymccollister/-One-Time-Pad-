@@ -22,7 +22,7 @@ Example
 #### BinaryToImage.py converts the key file into an image file.  
 #### pyinstaller --onefile -w otp.py will create a windows program.(included)
 #### keygen.exe in keyscsprng will generate 1k keys.  Go to that directory(command prompt) and type keygen.exe the command prompt.(included)
-
+#### sp800_22_tofileloop.exe in keyscsprng tests random numbers in windows 10/11.(very slow)
 
 
 
