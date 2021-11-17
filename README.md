@@ -11,7 +11,7 @@ Example
 #### One Time pad keys >= message and therefore not breakable.   Vernam -- U.S. Patent 1,310,719, issued July 22, 1919.  The term xor was not used in the patent.  In modern terminology, a Vernam cipher is a symmetrical stream cipher in which the plaintext is combined with a random or pseudorandom stream of data (the "keystream") of the same length, to generate the ciphertext, using the Boolean "exclusive or" (XOR) function.  A famous example of this is the US-Moscow hotline.(point to point).  A sufficient supply of keys have to be prepaired and distributed well in advance of a potential communication which will happen as normal.  
 #### OTP Keys must be securely delivered, random, and ===>not reused.<===   There will be a definite cost to setup and maintain.  
 #### In the windows 10/11 system all PRNGs in the system are SP800-90 AES_CTR_DRBG with 256-bit security strength using the df() function for seeding and re-seeding(see SP 800-90 for details). Random number generation is very fast.
-#### keysusbtruerng_V3 using TrueRNG V3 - USB Hardware Random Number Generator are not guessable. Random number generation is slow. Key generation using a video camera is slower. Keys can be generated(keygen, videoTrng125k.py, usbrng.py) and tested with autodeletion(sp800_22_tofileloop.py-There is a specification for random numbers and a good RNG can fail up to 25%-35% of time. The python program runs 20x (when converted to cython 6x) slower than the USB RNG) in the directories keyscsprng, keystruerng, and keysusbtruerng_V3 for files that fail to pass the test.
+#### keysusbtruerng_V3 using TrueRNG V3 - USB Hardware Random Number Generator are not guessable.  with 10,400,000-bit security strength.  Random number generation is slow. Key generation using a video camera is slower. Keys can be generated(keygen, videoTrng125k.py, usbrng.py) and tested with autodeletion(sp800_22_tofileloop.py-There is a specification for random numbers and a good RNG can fail up to 25%-35% of time. The python program runs 20x (when converted to cython 6x) slower than the USB RNG) in the directories keyscsprng, keystruerng, and keysusbtruerng_V3 for files that fail to pass the test.
 #### However -
 #### An OTP can be used to force multifactor authentication - see other repositories
 #### An OTP is Quantum secure.
@@ -22,7 +22,7 @@ Example
 #### BinaryToImage.py converts the key file into an image file.  
 #### pyinstaller --onefile -w otp.py will create a windows program.(included)
 #### keygen.exe in keyscsprng will generate 1k keys.  Go to that directory(command prompt) and type keygen.exe the command prompt.(included)
-#### Checking to see if the key is random is is done with a python program for groups(sp800_22_tofileloop.py) of say 1,000, (python sp800_22_tofile.py filename(example - 1.txt)) or individually with a gui(sp800_22RandomNumberTest.py).  Either will take time.
+#### Checking to see if the key is random is is done with a python program for groups(sp800_22_tofileloop.py) of say 1,000, individually(python sp800_22_tofilename.py(cythonize((recomended)/win11/i7/9min)) or individually with a gui(sp800_22RandomNumberTest.py(win11/i7/180min)).  Either will take time.
 
 
 
