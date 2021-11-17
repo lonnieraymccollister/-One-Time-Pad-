@@ -1,7 +1,6 @@
 import subprocess
 import shutil, os
 import sys
-from sys import argv,exit
 
 i = 0
 # generate otpkeys with random data
