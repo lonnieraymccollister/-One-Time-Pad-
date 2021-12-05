@@ -1,4 +1,4 @@
-#python setup.py build_ext --inplace --language_level=3
+#python setup.py build_ext --inplace
 from setuptools import setup
 from Cython.Build import cythonize
 

@@ -4,9 +4,9 @@ import sys
 
 i = 0
 # generate otpkeys with random data
-number = 1000
+number = 25000-int(sys.argv[1])
 for i in range(number):
-    file = str(i) + ".txt"
+    file = str(i+int(sys.argv[1])) + ".txt"
     symfile = ("python usbrng1.py " + str(file))
     print(symfile)
     os.system(symfile)
