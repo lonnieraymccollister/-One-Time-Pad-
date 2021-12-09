@@ -24,7 +24,7 @@ Example
 #### keygen.exe in keyscsprng will generate 1k keys.  Go to that directory(command prompt) and type keygen.exe the command prompt.(included)
 #### Checking to see if the key is random is is done with a python program for groups(sp800_22_tofileloop.py) of say 1,000, individually(python sp800_22_tofilename.py(cythonize((recomended)/win11/i7/9min)) or individually with a gui(sp800_22RandomNumberTest.py(win11/i7/180min)).  Either will take time.
 #### You can use facial recognition from a modified program(fr.py) at https://github.com/ageitgey/face_recognition to start otp -- add your user image. Windows 11 example desktop link. see READMEFaceRecognition.
-#### (sp800_22_tofileloop 0.txt) enables checking large numbers of files stop/restart)
+#### (sp800_22_tofileloop 0 1000)(sp800_22_tofileloop Begin# end#) enables checking large numbers/(on demand)/Time-it of files stop/restart)
 
 
 
