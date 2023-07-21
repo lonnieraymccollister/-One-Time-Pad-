@@ -3,7 +3,7 @@ One Time Pad
 Example
 #### Python
 #### cd /d E:\(Your path)\keys 
-#### Generates 30 keys
+#### Generates 1300 keys
 #### python keygen.py
 #### cd /d E:\lonnielaptop\PythonEnvs\otp
 #### enc.py a.txt 0.txt 0a.txt
@@ -22,8 +22,8 @@ Example
 #### BinaryToImage.py converts the key file into an image file.  
 #### pyinstaller --onefile -w otp.py will create a windows program.(included)
 #### keygen.exe in keyscsprng will generate 1k keys.  Go to that directory(command prompt) and type keygen.exe the command prompt.(included)
-#### Checking to see if the key is random is is done with a python program for groups(sp800_22_tofileloop.py) of say 1,000, individually(python sp800_22_tofilename.py(cythonize((recomended)/win11/i7/9min)If you have numba delete sp800_22_linear_complexity_test.py/sp800_22_linear_complexity_test.pyx(etc.) and rename sp800_22_linear_complexity_test(numba).py to achieve 210 seconds(Mixed)) or individually with a gui(sp800_22RandomNumberTest.py(win11/i7/180min)).  Either will take time.
-#### (sp800_22_tofileloop 0 1000)(sp800_22_tofileloop Begin# end#) enables checking large numbers/(on demand)/Time-it of files stop/restart)
+#### Checking to see if the key is random is is done with a python program for groups(sp800_22_tofileloop.py) of say 1,000, individually(python sp800_22_tofilename.py(cythonize((recomended)/win11/i7/9min)
+#### (sp800_22_tofileloop 0 1000)(sp800_22_tofileloop Begin# end#) enables checking large numbers of keys)
 
 
 

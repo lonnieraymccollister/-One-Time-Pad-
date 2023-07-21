@@ -13,7 +13,7 @@ import os
 i = 0
 
 # generate otpkeys with random data
-number = 30
+number = 1300
 for i in range(number):
     file = str(i) + ".txt"
     newfile = open( file , "wb")
