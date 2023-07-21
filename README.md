@@ -18,7 +18,7 @@ Example
 #### An OTP is not experimental and has had a long history of use worldwide.
 #### A gui is included -- otp.py -- the key is automatically moved from the keys directory to a used directory.  Keys generated in other directories should be moved to the keys directory and any used keys should be deleted at that time.
 #### I recommend registered mail with a return reciept using a micro-sd for secure delivery of keys in order to minimize costs and maximize security. -- See NIST Special Publication 800-53 (Rev. 4) Security and Privacy Controls for Federal Information Systems and Organizations -- SC-37 OUT-OF-BAND CHANNELS -- cryptographic key management information.  Another option is "in person".
-####  In the key directory use Combine8OtpFiles.py to increase the size of the Key file.  The keys used will be automatically deleted as reused keys are an attack on the one time pad.  An example of this is ===>> Combine8OtpFiles.py 1 2 3 4 5 6 7 8 <<===.  The program will automatically add the .txt suffix of the key file. 
+####  In the key directory use Combine8OtpFiles.py to increase the size of the Key file.  The keys used will be automatically deleted as reused keys are an attack on the one time pad.  An example of this is ===>> Combine8OtpFiles.py 1 2 3 4 5 6 7 8 <<===.  The program will automatically add the .txt suffix of the key file. A windows program for the cmd prompt is included.
 #### BinaryToImage.py converts the key file into an image file.  
 #### pyinstaller --onefile -w otp.py will create a windows program.(included)
 #### keygen.exe in keyscsprng will generate 1k keys.  Go to that directory(command prompt) and type keygen.exe the command prompt.(included)
