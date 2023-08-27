@@ -21,7 +21,7 @@ from serial.tools import list_ports
 blocksize=102400
 
 # Number of loops
-numloops=13
+numloops=256
 
 # Set com port to default None
 rng_com_port = None

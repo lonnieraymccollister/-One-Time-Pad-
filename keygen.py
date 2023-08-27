@@ -13,9 +13,9 @@ import os
 i = 0
 
 # generate otpkeys with random data
-number = 30
+number = 1313
 for i in range(number):
     file = str(i) + ".txt"
     newfile = open( file , "wb")
-    newfile.write (os.urandom(24500000))    # generate x 1 byte random content file
+    newfile.write (os.urandom(26000000))    # generate x 1 byte random content file
     newfile.close ()
